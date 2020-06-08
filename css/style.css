@@ -115,12 +115,12 @@ i{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    height: 100%;
     padding-top: 6%;
 }
 
 
 #video-itself {
-    margin-top: 5%;
     width: 40%;
     align-self: flex-start;
 }
@@ -129,13 +129,14 @@ i{
     display: flex;
     flex-direction: column;
     padding-left: 3%;
-    padding-top: 3%;
     padding-bottom: 3%;
     padding-right: 3%;
     width: 40%;
+    height: 100%;
 }
 
 .video-recom {
+    font-size: large;
 }
 
 #mini-menu {
@@ -164,7 +165,7 @@ i{
 #recom-thumbnails {
     display: flex;
     flex-direction: column;
-    height: auto;
+    align-self: stretch;
 }
 
 .recom-thumbnails {
@@ -178,7 +179,8 @@ i{
 .recom1 {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    margin-left: 1%;
+    justify-content: space-around;
 }
 
 .vid-title {
@@ -189,18 +191,25 @@ i{
     display: flex;
     flex-direction: column;
     text-align: left;
+    font-size: small;
 }
 
 .canal-vistas {
     display: flex;
     flex-direction: column;
     text-align: left;
+    font-size: small;
 }
 
 #info-and-vids {
     display: flex;
     flex-flow: row wrap;
+    flex-direction: column;
     margin-top: 4%;
+}
+
+#info-and-text {
+    flex-wrap: wrap;
 }
 
 .video-info {
@@ -214,21 +223,26 @@ i{
     display: flex;
     flex-direction: column;
     padding-bottom: 5%;
+    font-size: large;
 }
 
 #info-text {
     display: flex;
     flex-direction: row;
     padding-left: 1%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+    justify-content: space-between;
 }
 
 #views {
-    margin-right: 10%;
+    width: 60%;
+}
+
+#reactions {
+    width: 40%
 }
 
 #like-and-dislike {
-    margin-left: 20%;
 }
 
 .options {
@@ -238,17 +252,17 @@ i{
 
 .imgreaction {
     height: 20px;
+    margin-right: 1%;
 }
 
 .b-share{
-    padding: 5px;
-    background: rgb(96, 96, 240);
+    width: 25%;
 }
 
 #profile-and-subscribe {
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #profile {
@@ -268,6 +282,10 @@ i{
 #text {
     margin-top: 3%;
     margin-left: 2%;
+}
+
+.videotext {
+    text-align: justify;
 }
 
 #extraText {
@@ -432,4 +450,5 @@ h3{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    flex-flow: row wrap;
 }
