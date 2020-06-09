@@ -25,16 +25,27 @@ body{
     display:-webkit-flex;
     display:-ms-flexbox;
     justify-content:space-between;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
 }
 
 .lists{
     color:white;
     padding:10px 5px 0px 15px;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.ad{
+    padding-left: 0px;
+    margin-left: 5px;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 #logo{
-    width:30px;
+    display: flex;
+    flex 1 1 auto;
 }
 
 .nav-container{
@@ -45,12 +56,14 @@ body{
 }
 
 #searchbar{
-    width: 50%;
+    display: flex;
+    flex: 3 1 auto;
 }
 
-.ad{
-    padding-left: 0px;
-    margin-left: 5px;
+#other-options {
+    display: flex;
+    flex: 2 1 auto;
+    justify-content: flex-end;
 }
 
 .search{
@@ -79,6 +92,8 @@ button{
 .list li{
     list-style: none;
     margin-right: 20px;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 i{
@@ -91,51 +106,53 @@ i{
     background: rgb(92, 92, 246);
 }
 
-.logo{
-    padding-top: 5px;
-}
 
 /*navbar classes up from here*/
-/*.container{
-    width:1326px;
-    display: block;
-}*/
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #container-1 {
     padding-right: 15px;
     padding-left: 15px;
+    margin-top: auto;
     /*margin-right: auto;
     margin-left: auto;*/
-    display: flex;
-    flex-flow: row;
 }
 
-#video-container{
+#main-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 100%;
-    height: 100%;
     padding-top: 6%;
 }
 
-
 #video-itself {
-    width: 40%;
     display: flex;
-    flex-flow: column wrap;
-    flex-grow: 1;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    flex: 1 1 40%;
+}
+
+#info-and-vids {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
 }
 
 #video-recom {
     display: flex;
-    flex-flow: column wrap;
-    flex-grow: 1;
+    flex-direction: column;
+    padding-top: 3%;
     padding-left: 3%;
     padding-bottom: 3%;
     padding-right: 3%;
-    width: 40%;
-    height: 100%;
+    flex: 1 1 40%;
 }
 
 .video-recom {
@@ -204,13 +221,6 @@ i{
     font-size: small;
 }
 
-#info-and-vids {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    margin-top: 4%;
-}
-
 #info-and-text {
     flex-wrap: wrap;
 }
@@ -238,7 +248,7 @@ i{
 }
 
 #views {
-    width: 60%;
+    width: 50%;
 }
 
 #reactions {
@@ -398,9 +408,13 @@ h3{
 }
 
 .nav-container{
-    position:fixed;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
     height: 50px;
-    width: 100%;
+    margin-bottom: 20%;
 }
 
 
@@ -474,4 +488,22 @@ h3{
 
 .emoji {
     width: 30px;
+}
+
+
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
