@@ -18,7 +18,7 @@
                     <img src="img/logo2.png" alt="Logo"  height="30">
                 </div>
                 <div id="searchbar" class='lists'>
-                    <form>
+                    <form id="sb">
                         <input class='search' type='text' placeholder='Search'>
                         <button>
                             <i class="fa fa-search" aria-hidden="true"></i>
@@ -36,17 +36,17 @@
             </nav>
         </header>
         <div id="container-1">
-            <main id="main-container">
-                <div id="video-container">
-                        <div id="video-itself">
-                            <div>
+            <main id="main-container" class="row-wrap">
+                        <div id="video-itself" class="column">
+                            <div class="videowrapper">
                                 <iframe width="700" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                             </div>
-                            <div id="info-and-vids">
+                            <div id="info-and-vids" class="column">
                                 <div class="info-and-text">
-                                    <div class="video-info"><p id="video-title">Contributing to Open Source Part I: The Easy Way</p></div>
-                                    <div id="info-text">
+                                    <div class="video-info column"><p id="video-title" class="column">Contributing to Open Source Part I: The Easy Way</p></div>
+                                    <div id="info-text" class="row">
                                         <span id="views">57,247 views  27 feb. 2014</span>
+                                        <div id="middle"></div>
                                         <div id="reactions">
                                             <span id="like-and-dislike">
                                                 <span class="options"  >
@@ -56,21 +56,23 @@
                                                     <img src="img/dislike.png" class="imgreaction" alt=''>18
                                                 </span>
                                             </span>
-                                            <button class='b-share'>SHARE</button>
-                                            <span class="options" ><img src="img/add.png" class="imgreaction" alt=''> SAVE</span>
-                                            <span class="options" >...</span>
+                                            <span id="sharve" class="options b-share"><img src="img/share.png" class="imgreaction" alt="save">SHARE</span>
+                                            <span class="options" id="save"><img src="img/add.png" class="imgreaction" alt='save'>SAVE</span>
+                                            <span class="options" id="more">. . .</span>
                                     </div>
                                     </div>
                                 <hr>
                                 </div>
-                                <div id="profile-and-info">
-                                    <div id="profile-and-subscribe">
+                                <div id="profile-and-info" class="row-wrap">
+                                    <div id="profile-and-name" class="row">
                                         <img src="img/profile.jpg" id="profile" alt=''>
                                         <span id="profile-name">
                                             <strong>The Odin Project</strong>
                                             <br>988 subscribers
                                         </span>
-                                        <img src="img/subscribe.png" id="subs" alt=''>
+                                    </div>
+                                    <div id="subscribe">
+                                            <button name="subscribe" class="b-subscribe">Subscribe</button>
                                     </div>
                                 </div>
                                 <div id="text">
@@ -81,78 +83,75 @@
                                     <hr>
                             </div>
                         </div>
-                        <aside id="video-recom">
-                            <div id="mini-menu">
+                        <aside id="video-recom" class="column">
+                            <div id="mini-menu" class="row">
                                 <p class="video-and-recom" id="upnext">Up next</p> <p class="video-and-recom">AUTOPLAY</p> <img src="img/switch.png" id="switch" alt=''>
                             </div>
-                            <div id="recom-thumbnails">
-                                <div class="recom-thumbnails">
+                            <div id="recom-thumbnails" class="column">
+                                <div class="recom-thumbnails row">
                                     <img src="img/thumbnail1.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1">
+                                    <div class="recom1 column">
                                         <span class="video-recom">
-                                            <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-                                            <i class="em em-sleeping"  ></i>Deep sleep music
+                                            <img src="img/emoji1.png" class="emoji" alt="sleep">Deep sleep music
                                         </span>
-                                        <span class="canal">Simply Hypnotic</span>
-                                        <span class="canal-vistas">475 Are watching</span>
+                                        <span class="canal column">Simply Hypnotic</span>
+                                        <span class="canal-vistas column">475 Are watching</span>
                                     </div>
                                 </div>
-                                <div class="recom-thumbnails">
+                                <div class="recom-thumbnails row">
                                     <img src="img/thumbnail2.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1">
+                                    <div class="recom1 column">
                                         <span class="video-recom">Contributing to Open Source Part II: The Real Way</span>
-                                        <span class="canal">The Odin Project</span>
-                                        <span class="canal-vistas"> 35,367 views  6 years ago</span>
+                                        <span class="canal column">The Odin Project</span>
+                                        <span class="canal-vistas column"> 35,367 views  6 years ago</span>
                                     </div>
                                 </div>
-                                <div class="recom-thumbnails">
+                                <div class="recom-thumbnails row">
                                     <img src="img/thumbnail3.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1">
-                                        <span class="video-recom">
-                                            <i class="em em-vhs" ></i> | 24/7 Vaporwave Radio
-                                        </span><span class="canal">Krelez</span>
-                                        <span class="canal-vistas">109 Are watching</span>
+                                    <div class="recom1 column">
+                                        <span class="video-recom"><img src="img/emoji2.png" class="emoji" alt="vhs">|24/7 Vaporwave Radio</span>
+                                        <span class="canal column">Krelez</span>
+                                        <span class="canal-vistas column">109 Are watching</span>
                                     </div>
                                 </div>
-                                <div class="recom-thumbnails">
+                                <div class="recom-thumbnails row">
                                     <img src="img/thumbnail4.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1">
+                                    <div class="recom1 column">
                                         <span class="video-recom">Rodrigo quiere toda la empresa para el</span>
-                                        <span class="canal">Shark Tank Mexico</span>
-                                        <span class="canal-vistas">Recommended for you</span>
+                                        <span class="canal column">Shark Tank Mexico</span>
+                                        <span class="canal-vistas column">Recommended for you</span>
                                     </div>
                                 </div>
-                                <div class="recom-thumbnails">
+                                <div class="recom-thumbnails row">
                                     <img src="img/thumbnail5.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1">
+                                    <div class="recom1 column">
                                         <span class="video-recom">Lofi Hip-Hop Mix</span>
-                                        <span class="canal">Chilledcow</span>
-                                        <span class="canal-vistas">Live</span>
+                                        <span class="canal column">Chilledcow</span>
+                                        <span class="canal-vistas column">Live</span>
                                     </div>
                                 </div>
-                                <div class="recom-thumbnails">
+                                <div class="recom-thumbnails row">
                                     <img src="img/thumbnail6.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1">
+                                    <div class="recom1 column">
                                         <span class="video-recom">Express JS Crash Course</span>
-                                        <span class="canal">Traversy Media</span>
-                                        <span class="canal-vistas">Recommended for you</span>
+                                        <span class="canal column">Traversy Media</span>
+                                        <span class="canal-vistas column">Recommended for you</span>
                                     </div>
                                 </div>
-                                <div class="recom-thumbnails">
+                                <div class="recom-thumbnails row">
                                     <img src="img/thumbnail7.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1">
-                                        <span class="video-recom">Close your eyes</span>
-                                        <span class="canal">Blue Water</span>
-                                        <span class="canal-vistas">Recommended for you</span>
+                                    <div class="recom1 column">
+                                        <span class="video-recom"> <img src="img/emoji3.png" class="emoji" alt="vhs">Close your eyes</span>
+                                        <span class="canal column">Blue Water</span>
+                                        <span class="canal-vistas column">Recommended for you</span>
                                     </div>
                                 </div>
                             </div>
                         </aside>
-                </div>
                 </main>
         </div>
-            <div id="container-2" class='op'> <!--container comments and  youtube suggestions-->
-                <div id="containerContainer">
+            <div id="container-2" class='op row'> <!--container comments and  youtube suggestions-->
+                <div id="containerContainer" class="row">
                     <section id="comment-section">
                         <div class='comment-header'><h2 class='lis1'>6 Comments</h2></div>
                         <div>
@@ -160,7 +159,7 @@
                                 <input class='write-form' type='text' placeholder='Add a comment'>
                             </form>
                         </div>
-                        <div class="coment">
+                        <div class="coment row-wrap">
                             <div class='user-img'>
                                 <img src="/img/user.png" alt="" height='35'>
                             </div>
