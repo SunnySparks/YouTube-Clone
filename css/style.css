@@ -248,14 +248,28 @@ i{
 }
 
 #views {
-    width: 50%;
+    display: flex;
+    align-self: flex-start;
+    flex: 1 1 auto;
 }
 
 #reactions {
-    width: 40%
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+}
+
+#middle {
+    display: flex;
+    align-self: center;
+    flex: 1 1 auto;
 }
 
 #like-and-dislike {
+    display: flex;
+    flex: 1 1 auto;
+    justify-self: flex-end;
 }
 
 .options {
@@ -269,13 +283,47 @@ i{
 }
 
 .b-share{
-    width: 25%;
+    display: flex;
+    flex: 1 1 auto;
 }
 
-#profile-and-subscribe {
+#save {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#more{
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#profile-and-info{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+#profile-and-name {
     display: flex;
     flex-direction: row;
-    margin-top: 2%;
+    margin-top: 1%;
+    flex: 1 1 auto;
+}
+
+#subscribe {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+}
+
+.b-subscribe {
+    background-color: #cc0300;
+    color: white;
+    width: 90px;
+    height: 40px;
+    align-self: flex-end;
 }
 
 #profile {
