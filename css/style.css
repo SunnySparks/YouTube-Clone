@@ -105,7 +105,7 @@ i{
 .ifra{
     margin-top: 10%;
     margin-left:10%;
-    width: 70%;
+    width: 80%;
 }
 
 #main-container{
@@ -166,6 +166,29 @@ i{
 
 .imgreaction {
     height: 20px;
+}
+
+.b-share{
+    padding: 10px;
+    background: rgb(96, 96, 240);
+}
+#profile {
+    height: 40px;
+    margin-right: 1%;
+}
+
+#subs {
+    height: 50px;
+    margin-left: 50%;
+}
+
+#cat {
+    margin-right: 10%;
+}
+
+#catName {
+    margin-left: 5%;
+    color: #0033FF;
 }
 /* video description container sttyles */
 .comment-header{
@@ -248,6 +271,7 @@ aside {
 
 .video-recom{
     height: 90px;
+    width:160px;
 }
 
 
@@ -273,85 +297,40 @@ aside {
     margin-right: 40px;
 }
 
-/* Replace the display property */
+.recom1 {
+    display: block;
+    margin-left:10px;
+}
 .switch {
     display: inline;
     padding-left: 4%;
     padding-right: 4%;
 }
-
-
-
-
-
-
-/* ---------------------------------------- */
-
-
-
-
-
-
-
-
-
 #recom-text {
     text-align: left;
 }
 
-/* Replace display property */
-.recom1 {
-    display: inline-block;
-}
-
-.vid-title {
-    display: block;
-}
-
-.canal  {
-    display: block;
-}
-
-.canal-vistas {
-        display: block;
-}
-/* ---------------------------------- */
+/* Video suggestion up from here */
 
 
 
-.options {
-    margin-left: 1%;
-    margin-right: 1%;
-}
 
 
 
-#profile {
-    height: 40px;
-    margin-right: 1%;
-}
 
 
 
-#subs {
-    height: 50px;
-    margin-left: 50%;
-}
-
-
-.b-share{
-    padding: 10px;
-    background: rgb(96, 96, 240);
-}
 
 
 
-#cat {
-    margin-right: 10%;
-}
 
-#catName {
-    margin-left: 5%;
-    color: #0033FF;
-}
+
+
+
+
+
+
+
+
+
 
