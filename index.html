@@ -18,9 +18,9 @@
                     <img src="img/logo2.png" alt="Logo"  height="30">
                 </div>
                 <div id="searchbar" class='lists'>
-                    <form id="sb">
+                    <form>
                         <input class='search' type='text' placeholder='Search'>
-                        <button>
+                        <button class='sear'>
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </form>
@@ -35,137 +35,60 @@
                 </div>
             </nav>
         </header>
-        <div id="container-1">
-            <main id="main-container" class="row-wrap">
-                        <div id="video-itself" class="column">
-                            <div class="videowrapper">
-                                <iframe width="700" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-                            </div>
-                            <div id="info-and-vids" class="column">
-                                <div class="info-and-text">
-                                    <div class="video-info column"><p id="video-title" class="column">Contributing to Open Source Part I: The Easy Way</p></div>
-                                    <div id="info-text" class="row">
-                                        <span id="views">57,247 views  27 feb. 2014</span>
-                                        <div id="middle"></div>
-                                        <div id="reactions">
-                                            <span id="like-and-dislike">
-                                                <span class="options"  >
-                                                    <img src="img/like.png" class="imgreaction" alt=''>423
-                                                </span>
-                                                <span class="options" >
-                                                    <img src="img/dislike.png" class="imgreaction" alt=''>18
-                                                </span>
-                                            </span>
-                                            <span id="sharve" class="options b-share"><img src="img/share.png" class="imgreaction" alt="save">SHARE</span>
-                                            <span class="options" id="save"><img src="img/add.png" class="imgreaction" alt='save'>SAVE</span>
-                                            <span class="options" id="more">. . .</span>
-                                    </div>
-                                    </div>
-                                <hr>
-                                </div>
-                                <div id="profile-and-info" class="row-wrap">
-                                    <div id="profile-and-name" class="row">
-                                        <img src="img/profile.jpg" id="profile" alt=''>
-                                        <span id="profile-name">
-                                            <strong>The Odin Project</strong>
-                                            <br>988 subscribers
-                                        </span>
-                                    </div>
-                                    <div id="subscribe">
-                                            <button name="subscribe" class="b-subscribe">Subscribe</button>
-                                    </div>
-                                </div>
-                                <div id="text">
-                                    <p class="videotext">How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at http://theodinproject.com.</p><br>
-                                    <div id="extraText">
-                                    <span id="cat">Category</span><span id="catName">Science and technology</span></div>
-                                    </div>
-                                    <hr>
+           
+            <div class='videoContainer'>
+                <div class="container1">
+                    <iframe class='ifra' width="600" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <div id="info-and-vids">
+                        <div class='descriptionCont'>
+                            <div><p >Contributing to Open Source Part I: The Easy Way</p></div>
+                            <div>
+                                <p id="views">57,247  views   27   feb.  2014</p>
                             </div>
                         </div>
-                        <aside id="video-recom" class="column">
-                            <div id="mini-menu" class="row">
-                                <p class="video-and-recom" id="upnext">Up next</p> <p class="video-and-recom">AUTOPLAY</p> <img src="img/switch.png" id="switch" alt=''>
-                            </div>
-                            <div id="recom-thumbnails" class="column">
-                                <div class="recom-thumbnails row">
-                                    <img src="img/thumbnail1.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1 column">
-                                        <span class="video-recom">
-                                            <img src="img/emoji1.png" class="emoji" alt="sleep">Deep sleep music
-                                        </span>
-                                        <span class="canal column">Simply Hypnotic</span>
-                                        <span class="canal-vistas column">475 Are watching</span>
-                                    </div>
-                                </div>
-                                <div class="recom-thumbnails row">
-                                    <img src="img/thumbnail2.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1 column">
-                                        <span class="video-recom">Contributing to Open Source Part II: The Real Way</span>
-                                        <span class="canal column">The Odin Project</span>
-                                        <span class="canal-vistas column"> 35,367 views  6 years ago</span>
-                                    </div>
-                                </div>
-                                <div class="recom-thumbnails row">
-                                    <img src="img/thumbnail3.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1 column">
-                                        <span class="video-recom"><img src="img/emoji2.png" class="emoji" alt="vhs">|24/7 Vaporwave Radio</span>
-                                        <span class="canal column">Krelez</span>
-                                        <span class="canal-vistas column">109 Are watching</span>
-                                    </div>
-                                </div>
-                                <div class="recom-thumbnails row">
-                                    <img src="img/thumbnail4.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1 column">
-                                        <span class="video-recom">Rodrigo quiere toda la empresa para el</span>
-                                        <span class="canal column">Shark Tank Mexico</span>
-                                        <span class="canal-vistas column">Recommended for you</span>
-                                    </div>
-                                </div>
-                                <div class="recom-thumbnails row">
-                                    <img src="img/thumbnail5.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1 column">
-                                        <span class="video-recom">Lofi Hip-Hop Mix</span>
-                                        <span class="canal column">Chilledcow</span>
-                                        <span class="canal-vistas column">Live</span>
-                                    </div>
-                                </div>
-                                <div class="recom-thumbnails row">
-                                    <img src="img/thumbnail6.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1 column">
-                                        <span class="video-recom">Express JS Crash Course</span>
-                                        <span class="canal column">Traversy Media</span>
-                                        <span class="canal-vistas column">Recommended for you</span>
-                                    </div>
-                                </div>
-                                <div class="recom-thumbnails row">
-                                    <img src="img/thumbnail7.png" class="video-recom" alt='thumbnail'>
-                                    <div class="recom1 column">
-                                        <span class="video-recom"> <img src="img/emoji3.png" class="emoji" alt="vhs">Close your eyes</span>
-                                        <span class="canal column">Blue Water</span>
-                                        <span class="canal-vistas column">Recommended for you</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
-                </main>
-        </div>
-            <div id="container-2" class='op row'> <!--container comments and  youtube suggestions-->
-                <div id="containerContainer" class="row">
+                        <div class='likeContainer'>
+                                <span class="options">
+                                    <img src="img/like.png" class="imgreaction" alt=''>423
+                                </span>
+                                <span class="options" >
+                                    <img src="img/dislike.png" class="imgreaction" alt=''>18
+                                </span>
+                                <button class='b-share'>SHARE</button>
+                                <span class="options" ><img src="img/add.png" class="imgreaction" alt=''>SAVE</span>
+                                <span class="options" >...</span>
+                        </div>
+                    <div id="profile-and-subscribe">
+                        <img src="img/profile.jpg" id="profile" alt=''>
+                        <span id="profile-name">
+                            <strong>The Odin Project</strong>
+                            <br>988 subscribers
+                        </span>
+                        <img src="img/subscribe.png" id="subs" alt=''>
+                    </div>
+
+                    
+                    
+                    <div id="text">
+                        <p>How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open source software projects are typically looking for.  As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails.  You can find more information about that project at http://theodinproject.com.</p><br>
+                        <div id="extraText">
+                            <span id="cat">Category</span><span id="catName">Science and technology</span></div>
+                        </div>
+                        
+                    </div>
                     <section id="comment-section">
                         <div class='comment-header'><h2 class='lis1'>6 Comments</h2></div>
-                        <div>
+                        <div class='comment-header'>
                             <form>
                                 <input class='write-form' type='text' placeholder='Add a comment'>
                             </form>
                         </div>
-                        <div class="coment row-wrap">
+                        <div class="coment">
                             <div class='user-img'>
                                 <img src="/img/user.png" alt="" height='35'>
                             </div>
                             <article class='user-comment'>
                                 <h3>UserName</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate maiores dolore beatae at recusandae saepe ipsum nam tenetur quaerat?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing lit. Amet voluptate maiores dolore beatae at recusandae saepe ipsum nam tenetur quaerat?</p>
                                 <div class='comment-icons'><i class="fa fa-thumbs-up" aria-hidden="true"></i><i class="fa fa-thumbs-o-down" aria-hidden="true"></i><div><p>RESPONSE</p></div></div>
                             </article>
                         </div>
@@ -219,8 +142,73 @@
                                 <div class='comment-icons'><i class="fa fa-thumbs-up" aria-hidden="true"></i><i class="fa fa-thumbs-o-down" aria-hidden="true"></i><div><p>RESPONSE</p></div></div>
                             </article>
                         </div>
-                    </section>
+                    </section> 
                 </div>
-            </div>
+                <aside id="video-recom">
+                    <div id="mini-menu">
+                        <p  id="upnext">Up next</p> <p>AUTOPLAY</p> <img src="img/switch.png" id="switch" alt=''>
+                    </div>
+                    <div id="recom-thumbnails">
+                        <div class="recom-thumbnails">
+                            <img src="img/thumbnail1.png" class="video-recom" alt='thumbnail'>
+                            <div class="recom1 column">
+                                <span class="video-recom">
+                                    Deep sleep music
+                                </span>
+                                <span class="column">Simply Hypnotic</span>
+                                <span class="column">475 Are watching</span>
+                            </div>
+                        </div>
+                        <div class="recom-thumbnails">
+                            <img src="img/thumbnail2.png" class="video-recom" alt='thumbnail'>
+                            <div class="recom1 column">
+                                <span class="video-recom">Contributing to Open Source Part II: The Real Way</span>
+                                <span class="column">The Odin Project</span>
+                                <span class="column"> 35,367 views  6 years ago</span>
+                            </div>
+                        </div>
+                        <div class="recom-thumbnails">
+                            <img src="img/thumbnail3.png" class="video-recom" alt='thumbnail'>
+                            <div class="recom1 column">
+                                <span class="video-recom">24/7 Vaporwave Radio</span>
+                                <span class="column">Krelez</span>
+                                <span class="column">109 Are watching</span>
+                            </div>
+                        </div>
+                        <div class="recom-thumbnails">
+                            <img src="img/thumbnail4.png" class="video-recom" alt='thumbnail'>
+                            <div class="recom1 column">
+                                <span class="video-recom">Rodrigo quiere toda la empresa para el</span>
+                                <span class="column">Shark Tank Mexico</span>
+                                <span class="column">Recommended for you</span>
+                            </div>
+                        </div>
+                        <div class="recom-thumbnails">
+                            <img src="img/thumbnail5.png" class="video-recom" alt='thumbnail'>
+                            <div class="recom1 column">
+                                <span class="video-recom">Lofi Hip-Hop Mix</span>
+                                <span class="column">Chilledcow</span>
+                                <span class="column">Live</span>
+                            </div>
+                        </div>
+                        <div class="recom-thumbnails">
+                            <img src="img/thumbnail6.png" class="video-recom" alt='thumbnail'>
+                            <div class="recom1 column">
+                                <span class="video-recom">Express JS Crash Course</span>
+                                <span class="column">Traversy Media</span>
+                                <span class="column">Recommended for you</span>
+                            </div>
+                        </div>
+                        <div class="recom-thumbnails">
+                            <img src="img/thumbnail7.png" class="video-recom" alt='thumbnail'>
+                            <div class="recom1 column">
+                                <span class="video-recom">Close your eyes</span>
+                                <span class="column">Blue Water</span>
+                                <span class="column">Recommended for you</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+        </div>
     </body>
 </html>

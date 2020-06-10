@@ -1,72 +1,31 @@
-html {
-    box-sizing: border-box;
-}
-
 *{
     padding:0px;
     margin:0px;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    flex-flow: row wrap;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.row-wrap {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
+    
 }
 
 #menu {
     display:flex;
-    display:-webkit-flex;
-    display:-ms-flexbox;
+    
     justify-content:space-between;
-    flex-flow: row nowrap;
-    flex: 1 1 auto;
+    flex-flow: row wrap;
 }
 
 .lists{
     color:white;
     padding:10px 5px 0px 15px;
-    display: flex;
-    flex: 1 1 auto;
-}
-
-.ad{
-    padding-left: 0px;
-    margin-left: 5px;
-    display: flex;
-    flex: 1 1 auto;
 }
 
 #logo{
-    display: flex;
-    flex: 1 1 auto;
+    width:30px;
 }
 
 .nav-container{
-    display: flex;
-    flex-direction: row;
+    min-width: 1100px;
     position:fixed;
     height: 50px;
     width: 100%;
@@ -74,14 +33,12 @@ body{
 }
 
 #searchbar{
-    display: flex;
-    flex: 4 1 auto;
+    width: 50%;
 }
 
-#other-options {
-    display: flex;
-    flex: 2 1 auto;
-    justify-content: flex-end;
+.ad{
+    padding-left: 0px;
+    margin-left: 5px;
 }
 
 .search{
@@ -92,7 +49,7 @@ body{
     border:2px solid rgb(226, 219, 219);
 }
 
-button{
+.sear{
     padding: 8px;
     border:2px solid rgb(226, 219, 219);
     margin-bottom: 4px;
@@ -110,8 +67,6 @@ button{
 .list li{
     list-style: none;
     margin-right: 20px;
-    display: flex;
-    flex: 1 1 auto;
 }
 
 i{
@@ -124,222 +79,107 @@ i{
     background: rgb(92, 92, 246);
 }
 
-.container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.logo{
+    padding-top: 5px;
 }
 
-#container-1 {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-top: auto;
+/*navbar classes up from here*/
+.videoContainer {
+    
+    
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    flex-flow: row wrap;
+    
+    height: auto;
+    width: 100%;
+    min-width: 1100px;
+    
+}
+/*video*/
+.container1{
+    width:70%;
+       
+}
+.ifra{
+    margin-top: 10%;
+    margin-left:10%;
+    width: 80%;
 }
 
 #main-container{
-    justify-content: center;
-    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
 }
 
-#video-itself {
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-bottom: 3%;
-    padding-right: 3%;
-    flex: 1 1 40%;
+.video{
+    height:70%;
+    border-right:1px solid white;
+    margin-top: 81px;
+    margin-left:120px;
 }
-
 #info-and-vids {
-    margin-top: 4%;
-}
-
-#video-recom {
-    padding-top: 3%;
-    padding-left: 3%;
-    padding-bottom: 3%;
-    padding-right: 3%;
-    flex: 1 1 40%;
-}
-
-.video-recom {
-    font-size: large;
-}
-
-#upnext{
-    margin-right: 40%;
-}
-
-#switch {
-    height: 20px;
-    padding-bottom: 0%;
-}
-
-.switch {
     display: flex;
-    padding-left: 4%;
-    padding-right: 4%;
+    flex-flow: row wrap;    
+    margin-left:10%;
+    margin-top:10px;
 }
 
-#recom-thumbnails {
-    align-self: stretch;
-}
-
-.recom-thumbnails {
+.descriptionCont{
     display:flex;
-    margin-top: 1%;
-}
-
-.recom1 {
-    margin-left: 1%;
-    justify-content: space-around;
-}
-
-.vid-title {
-    display: flex;
-}
-
-.canal {
-    text-align: left;
-    font-size: small;
-}
-
-.canal-vistas {
-    text-align: left;
-    font-size: small;
-}
-
-#info-and-text {
-    flex-wrap: wrap;
-}
-
-.video-info {
-    width: 100%;
-}
-
-#video-title {
-    padding-bottom: 5%;
-    font-size: large;
-}
-
-#info-text {
-    display: flex;
-    padding-left: 1%;
-    padding-bottom: 1%;
+    flex-flow:column wrap;
+    width: 60%;
     justify-content: space-between;
 }
 
-#views {
-    display: flex;
-    align-self: flex-start;
-    flex: 1 1 auto;
+#video-title {  
+    padding-bottom: 5%;
 }
 
-#reactions {
-    display: flex;
-    align-self: flex-end;
-    justify-content: flex-end;
-    flex: 1 1 auto;
+.likeContainer{
+   width:40%; 
 }
 
-#middle {
-    display: flex;
-    align-self: center;
-    flex: 1 1 auto;
-}
 
-#like-and-dislike {
+#profile-and-subscribe {
     display: flex;
-    flex: 1 1 auto;
-    align-self: center;
+    flex-flow: row wrap;   
+    margin-top: 5%;
+    width: 100%;
 }
-
-.options {
-    margin-left: 1%;
+#profile-name{
     margin-right: 1%;
+}
+#text {
+    margin-top: 7px;
+    width: 90%;   
+}
+#text p {   
+    display: inline;
+    justify-content: left;  
+}
+
+#extraText {
+    margin-top: 15px;
 }
 
 .imgreaction {
     height: 20px;
-    margin-right: 1%;
 }
 
 .b-share{
-    display: flex;
-    flex: 1 1 auto;
-    margin-right: 5%;
+    padding: 10px;
+    background: rgb(96, 96, 240);
 }
-
-#sharve {
- display: flex;
- flex: 0 1 auto;
- align-self: center;
-}
-
-#save {
-    display: flex;
-    flex: 1 1 auto;
-    margin-left: 1%;
-    align-self: center;
-}
-
-#more{
-    display: flex;
-    flex: 1 1 auto;
-    align-self: center;
-    margin-bottom: 3%;
-    font-size: large;
-}
-
-#profile-and-info{
-    align-content: center;
-    margin-top: 2%;
-    justify-content: space-between;
-}
-
-#profile-and-name {
-    margin-top: 1%;
-    flex: 1 1 auto;
-}
-
-#subscribe {
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: flex-end;
-}
-
-.b-subscribe {
-    background-color: #cc0300;
-    color: white;
-    width: 90px;
-    height: 40px;
-    align-self: flex-end;
-}
-
 #profile {
     height: 40px;
     margin-right: 1%;
 }
 
-#profile-name{
-    margin-right: 1%;
-}
-
 #subs {
     height: 50px;
-    margin-left: 40%;
-}
-
-#text {
-    margin-top: 3%;
-    margin-left: 2%;
-}
-
-.videotext {
-    text-align: justify;
-}
-
-#extraText {
-    margin-bottom: 2%;
+    margin-left: 50%;
 }
 
 #cat {
@@ -350,28 +190,35 @@ i{
     margin-left: 5%;
     color: #0033FF;
 }
-
-.video{
-    height:720px;
-    width: 52%;
-    border-right:1px solid white;
-    margin-top: 81px;
-    margin-left:120px;
+/* video description container sttyles */
+.comment-header{
+    margin-left: 25px;
 }
-
-#comment-section{
-    width: 40%;
-    margin-top: 30px;
-}
-
 .coment{
+    display: flex;
+    flex-flow: row wrap;
     padding:15px;
 }
 
 .user-comment{
-    width:80%;
+    width: 80%;
     margin-left:10px;
 }
+.user-comment div p {
+    margin-left: -5px;
+    margin-top:8px;
+}
+
+#comment-section{
+    width:88%;
+    margin-left:65px;
+    margin-top: 30px;
+}
+
+.user-comment p{ 
+    margin-left:15px;
+}
+
 
 .comment-icons{
     margin-left:10px;
@@ -391,105 +238,99 @@ i{
 }
 
 .user-img{
-    width: 5%;
+    margin-left: 5px;
 }
 
 h3{
     padding-bottom: 10px;
+    padding-left: 10px;
+}
+/* the coments section */
+
+
+/* the suggestopn video section */
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: left;
+    margin-top:70px;
 }
 
-#sidebar{
-    margin-top:30px;
-    width: 40%;
-    padding-left: 3%;
-    padding-right: 3%;
+#mini-menu {
+    display: flex;
+    flex-direction: row;
 }
 
-.youtube-suggestion{
-    margin-bottom: 5px;
+.video-and-recom {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4%;
+    
+}
+
+.video-recom{
+    height: 90px;
+    width:160px;
 }
 
 
-.videos-description{
+#switch {
+    height: 20px;
+    padding-bottom: 0%;
+}
+
+.recom-thumbnails {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+#recom-thumbnails {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#upnext{
+    margin-right: 40px;
+}
+
+.recom1 {
+    display: block;
     margin-left:10px;
 }
-
-.videos-description p{
-    color:grey;
+.switch {
+    display: inline;
+    padding-left: 4%;
+    padding-right: 4%;
 }
-
-.list{
-    position:flex;
-}
-
-.list li{
-    display:flex;
-}
-
-.nav-container{
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex: 1 1 auto;
-    height: 50px;
-    margin-bottom: 20%;
-}
-
-#imgMenu {
-    height: 40px;
-}
-
-.videos {
-    display: flex;
-}
-
-#videos {
-    display: flex;
-    margin-left: 2%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-right: 5%;
-}
-
 #recom-text {
     text-align: left;
 }
 
-#container-2 {
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
-}
+/* Video suggestion up from here */
 
-#containerContainer {
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    padding-top: 2%;
-    justify-content: left;
-    margin-left: 180px;
-}
 
-.emoji {
-    width: 30px;
-}
 
-.videowrapper {
-    float: none;
-    clear: both;
-    width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-}
-.videowrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
-#sb{
-    width: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
