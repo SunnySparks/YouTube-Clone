@@ -14,7 +14,7 @@ In this project we are recreating a website with a simmilar interface to Youtube
 
 ## Live Demo
 
-[You can access to it by clicking on this link](https://sunnysparks.github.io/embedding-images-and-video/)
+[You can access to it by clicking on this link](https://raw.githack.com/SunnySparks/YouTube-Clone/feature/index.html)
 
 
 ## Authors
